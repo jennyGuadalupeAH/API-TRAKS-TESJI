@@ -8,7 +8,10 @@ import java.util.Optional;
 //Definir  metodos abstractos para implementar en los end-points"
 public interface ApiTraksService {
     ArrayList<DatosApiTraks> mostrarTracks(); //metodos para mostrar los tracks
+
     Optional<DatosApiTraks> buscarTraksPorId(long id);
+
     DatosApiTraks registrarTraks(DatosApiTraks cancion); //Registrar y actualizar
-    boolean eliminarTrack(long id);
+
+    boolean eliminartrack(long id);
 }

@@ -33,9 +33,8 @@ public class DatosApiTraks {
     //ENCAPSULACION
 
     public DatosApiTraks() {
-
-
     }
+
     public long getId() {
         return id;
     }
