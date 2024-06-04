@@ -32,6 +32,10 @@ public class DatosApiTraks {
     //Sobrecarga de metodos, al estar definiendo constructores
     //ENCAPSULACION
 
+    public DatosApiTraks() {
+
+
+    }
     public long getId() {
         return id;
     }
@@ -48,8 +52,5 @@ public class DatosApiTraks {
         return genero;
     }
 
-    public DatosApiTraks() {
 
-
-    }
 }
