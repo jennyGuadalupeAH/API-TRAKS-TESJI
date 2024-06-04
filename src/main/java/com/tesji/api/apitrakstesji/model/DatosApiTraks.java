@@ -28,4 +28,28 @@ public class DatosApiTraks {
         this.artista = artista;
         this.genero = genero;
     }
+
+    //Sobrecarga de metodos, al estar definiendo constructores
+    //ENCAPSULACION
+
+    public long getId() {
+        return id;
+    }
+
+    public String getTrack() {
+        return track;
+    }
+
+    public String getArtista() {
+        return artista;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public DatosApiTraks() {
+
+
+    }
 }
