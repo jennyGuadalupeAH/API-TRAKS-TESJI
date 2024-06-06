@@ -26,7 +26,7 @@ public class ApiTracksImplement implements ApiTraksService {
 
     @Override
     public DatosApiTraks registrarTraks(DatosApiTraks cancion) {
-        return null;
+        return crudApiTracksRepository.save(cancion);
     }
 
     @Override
