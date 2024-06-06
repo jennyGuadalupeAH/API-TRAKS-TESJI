@@ -31,6 +31,14 @@ public class ApiTracksImplement implements ApiTraksService {
 
     @Override
     public boolean eliminartrack(long id) {
+        //obtener el object o registro
+        try{
+        Optional<DatosApiTraks> track = buscarTraksPorId(id);
+            crudApiTracksRepository.delete(track.get());
+            return true;
+        }catch (Exception err){
+
+        }
         return false;
     }
 }
