@@ -26,6 +26,7 @@ public class ApiTracks {
     public ArrayList<DatosApiTraks> mostrarTodosTracks() {
         return apiTraksService.mostrarTracks();
     }
+
     //lo va rediccionara atrasvez de la url
     @GetMapping("/get-mostrar-track/{id}")
     public Optional<DatosApiTraks> mostrarTrack(@PathVariable("id")long id){
@@ -35,5 +36,9 @@ public class ApiTracks {
     @PostMapping("/guardar-track")
     public DatosApiTraks registrarTrack(@RequestBody DatosApiTraks track){
         return apiTraksService.registrarTraks(track);
+    }
+    @DeleteMapping("/eliminar-track/{id}")
+    public boolean eliminartrack(@PathVariable("id")long id){
+        return  apiTraksService.eliminartrack(id);
     }
 }
